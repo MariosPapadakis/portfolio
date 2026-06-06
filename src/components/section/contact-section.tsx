@@ -21,17 +21,19 @@ export default function ContactSection() {
       </div>
       <div className="relative flex flex-col items-center gap-4 text-center">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-          Get in Touch
+          Contact
         </h2>
         <p className="mx-auto max-w-lg text-muted-foreground text-balance">
-          Want to chat? Send me an email{" "}
+          The easiest way to reach me is by email{" "}
           <Link
             href={DATA.contact.social.email.url}
             className="text-blue-500 hover:underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
           >
             at {DATA.contact.email}
-          </Link>{" "}
-          and I&apos;ll respond whenever I can.
+          </Link>
+          .{" "}
+          I read every message and reply when there is a clear question or
+          project to discuss.
         </p>
       </div>
     </div>

@@ -8,9 +8,11 @@ import { Python } from "@/components/ui/svgs/python";
 import { Postgresql } from "@/components/ui/svgs/postgresql";
 import { Java } from "@/components/ui/svgs/java";
 import { Csharp } from "@/components/ui/svgs/csharp";
+import { Cplusplus } from "@/components/ui/svgs/cplusplus";
 import { Firebase } from "@/components/ui/svgs/firebase";
 import { Javascript } from "@/components/ui/svgs/javascript";
 import { Expo } from "@/components/ui/svgs/expo";
+import { Aws } from "@/components/ui/svgs/aws";
 
 export const DATA = {
   name: "Marios Papadakis",
@@ -19,9 +21,9 @@ export const DATA = {
   location: "Heraklion, Greece",
   locationLink: "https://www.google.com/maps/place/Heraklion,+Greece",
   description:
-    "Co-Founder @Opora and Computer Science student at the University of Crete.",
+    "Computer Science student at the University of Crete and co-founder of Opora.",
   summary:
-    "I am a Computer Science undergraduate at the [University of Crete](/#education), driven by a vision to design intelligent, scalable, and human-centered software. I build production web and mobile platforms with React Native, Expo, Next.js, Node.js, Firebase, and PostgreSQL, with current work spanning mobile application development at Epignosis, agricultural logistics through Opora, fitness management through Naedo, and AI-assisted learning tools.",
+    "I study Computer Science at the [University of Crete](/#education) and work mostly on web and mobile products. Recently that has meant mobile application work at Epignosis, logistics software for agricultural teams at Opora, gym management tools through Naedo, and a few university and hackathon projects around compilers, systems programming, and AI-assisted study tools.",
   avatarUrl: "/profile.jpg",
   skills: [
     { name: "TypeScript", icon: Typescript },
@@ -31,13 +33,14 @@ export const DATA = {
     { name: "Expo", icon: Expo },
     { name: "Next.js", icon: NextjsIconDark },
     { name: "Node.js", icon: Nodejs },
+    { name: "AWS", icon: Aws },
     { name: "Firebase", icon: Firebase },
     { name: "PostgreSQL", icon: Postgresql },
     { name: "SQL", icon: Postgresql },
     { name: "Python", icon: Python },
     { name: "Java", icon: Java },
     { name: "C", icon: Csharp },
-    { name: "C++", icon: Csharp },
+    { name: "C++", icon: Cplusplus },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -79,7 +82,7 @@ export const DATA = {
       start: "May 2026",
       end: "Present",
       description:
-        "Full-time junior software engineer focused on mobile application development.",
+        "Working full-time on mobile application development.",
     },
     {
       company: "Epignosis learning technologies",
@@ -91,7 +94,7 @@ export const DATA = {
       start: "Feb 2026",
       end: "May 2026",
       description:
-        "Software engineering internship contributing to remote product development work.",
+        "Worked remotely as a software engineering intern before moving into a full-time role.",
     },
     {
       company: "Opora",
@@ -103,7 +106,7 @@ export const DATA = {
       start: "Jul 2025",
       end: "Present",
       description:
-        "Designed and deployed a full-stack agricultural logistics platform using React Native/Expo for iOS and Android and Next.js for the web dashboard, enabling real-time producer-driver coordination across multi-tenant organizations. Integrated Firebase Firestore with live onSnapshot listeners for sub-second order tracking and route updates, improving delivery efficiency by 35%.",
+        "Designed and shipped an agricultural logistics platform with React Native, Expo, and Next.js. The product coordinates producers, drivers, and managers across multiple organizations, with Firestore listeners for live order tracking and route updates.",
     },
     {
       company: "Naedo.gr",
@@ -115,7 +118,7 @@ export const DATA = {
       start: "Jul 2024",
       end: "Present",
       description:
-        "Developed a cloud-native multi-tenant fitness management platform with React Native/Expo, Node.js APIs on Vercel, isolated Neon PostgreSQL instances, and Clerk-based authentication. Built an admin dashboard with runtime feature toggles, dynamic theming, and role-based access control, and automated gym provisioning with deployment scripts and Vercel Cron Jobs, reducing setup time from multiple days to under four hours.",
+        "Built a multi-tenant fitness management platform with React Native, Expo, Node.js APIs on Vercel, Neon PostgreSQL, and Clerk. I worked on the admin dashboard, feature toggles, theming, access control, and provisioning scripts that reduced gym setup time from days to under four hours.",
     },
     {
       company: "Enhance Digital Agency",
@@ -127,7 +130,7 @@ export const DATA = {
       start: "Nov 2024",
       end: "Dec 2024",
       description:
-        "Developed client websites with WordPress and JavaScript, collaborating with design and SEO teams to deliver responsive, SEO-optimized web solutions.",
+        "Built client websites with WordPress and JavaScript, working with design and SEO teams on responsive pages.",
     },
   ],
   education: [
@@ -147,7 +150,7 @@ export const DATA = {
       dates: "Jul 2025 - Present",
       active: true,
       description:
-        "Designed and deployed a full-stack agricultural logistics platform using React Native/Expo and Next.js, enabling real-time producer-driver coordination across multi-tenant organizations. Integrated Firebase Firestore with live onSnapshot listeners for sub-second order tracking and route updates, improving delivery efficiency by 35%. Built a role-based access system with notifications and Greek-first internationalization, now powering logistics for production clients across Greece.",
+        "A logistics platform for agricultural distribution teams. Producers create requests, drivers handle routes, and managers track orders through a Next.js dashboard and React Native apps. The system uses Firebase for live updates, role-based access, notifications, and Greek-first localization.",
       technologies: ["React Native", "Expo", "Next.js", "Firebase", "TypeScript"],
       links: [
         {
@@ -165,7 +168,7 @@ export const DATA = {
       dates: "Sep 2024 - Present",
       active: true,
       description:
-        "Developed Naedo, a cloud-native multi-tenant fitness management platform built with React Native/Expo, Node.js, and Vercel. Implemented secure tenant separation with Clerk authentication and isolated Neon PostgreSQL instances, built runtime feature toggles, dynamic theming, and role-based access control, and automated gym provisioning with deployment scripts and Vercel Cron Jobs.",
+        "A gym management platform for scheduling, members, and subscriptions. I built the React Native app, Node.js API layer, tenant separation with Clerk and Neon PostgreSQL, and the admin tooling used to configure each gym.",
       technologies: [
         "React Native",
         "Expo",
@@ -190,7 +193,7 @@ export const DATA = {
       dates: "Mar 2025 - Jun 2025",
       active: true,
       description:
-        "Implemented a full compiler pipeline in C++ for the custom Alpha programming language, including lexical analysis, parsing, semantic checks, intermediate code generation, and bytecode execution. Developed a stack-based virtual machine supporting nested scopes, closures, and reference-counted garbage collection, demonstrating end-to-end compiler design from source parsing to bytecode interpretation.",
+        "A compiler and stack-based virtual machine for the Alpha programming language. The project covers lexical analysis, parsing, semantic checks, intermediate code, bytecode execution, nested scopes, closures, and reference-counted memory management.",
       technologies: ["C++", "Flex", "Bison", "Compiler Design", "Virtual Machine"],
       links: [
         {
@@ -208,7 +211,7 @@ export const DATA = {
       dates: "HY240 Coursework",
       active: true,
       description:
-        "Built a C-based movie platform project for HY240, focusing on structured data handling, command-driven program flow, and systems programming fundamentals.",
+        "A C project for HY240 that models a movie platform with command-driven program flow and manual data-structure management.",
       technologies: ["C", "Makefile", "Data Structures", "Systems Programming"],
       links: [
         {
@@ -226,7 +229,7 @@ export const DATA = {
       dates: "Oct 2025",
       active: true,
       description:
-        "Award-winning AI-powered learning assistant that generates quizzes, flashcards, and summaries from study materials including PDFs, DOCX files, and YouTube videos.",
+        "A hackathon project that turns study material into summaries, flashcards, and quizzes from sources such as PDFs, DOCX files, and YouTube videos.",
       technologies: ["Next.js", "TypeScript", "Firebase", "Google Genkit AI"],
       links: [
         {
@@ -245,14 +248,14 @@ export const DATA = {
       dates: "Oct 2025",
       location: "Epignosis & University of Crete, Computer Science Department",
       description:
-        "Won 1st place for developing StudyPilot, an AI-powered learning assistant that generates quizzes, flashcards, and summaries from study materials including PDFs, DOCX files, and YouTube videos.",
+        "Won 1st place with StudyPilot, a learning assistant that creates summaries, flashcards, and quizzes from PDFs, DOCX files, and YouTube videos.",
       image: "/Logo.svg",
       win: "1st Place",
       links: [
         {
-          title: "GitHub",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/MariosPapadakis",
+          title: "Deck",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://www.figma.com/deck/sIZoFaxg7nzu09V4R2pLC8/StudyPilot--Copy-?node-id=18-55&p=f&viewport=-4195%2C336%2C0.15&t=I0FfsYGlIOmHreLJ-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
         },
       ],
     },
@@ -261,7 +264,7 @@ export const DATA = {
       dates: "May 2023",
       location: "OramaVR & University of Crete, Computer Science Department",
       description:
-        "Built a multiplayer educational VR game in 72 hours using Unity and the MAGES SDK plugin. The team placed 1st.",
+        "Built a multiplayer educational VR game in 72 hours with Unity and the MAGES SDK. The team placed 1st.",
       image: "/oramavr_logo.jpeg",
       win: "1st Place",
       links: [

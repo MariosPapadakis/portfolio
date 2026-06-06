@@ -18,11 +18,11 @@ export default function HackathonsSection() {
             <div className="flex-1 h-px bg-linear-to-l from-transparent from-5% via-border via-95% to-transparent" />
           </div>
           <div className="flex flex-col gap-y-3 items-center justify-center">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">I like building things</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Hackathons and awards</h2>
             <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed text-balance text-center">
-              During my time in university, I attended {DATA.hackathons.length}+
-              hackathons. People from around the country would come together and
-              build incredible things in 2-3 days. It was eye-opening to see the endless possibilities brought to life by a group of motivated and passionate individuals.
+              These are the hackathon projects I keep on the site: one AI study
+              tool and one educational VR game, both built under short deadlines
+              with university teams.
             </p>
           </div>
         </div>
