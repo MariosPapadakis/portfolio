@@ -16,12 +16,22 @@ function ProjectImage({ src, alt }: { src: string; alt: string }) {
   }
 
   return (
-    <img
-      src={src}
-      alt={alt}
-      className="w-full h-48 object-cover"
-      onError={() => setImageError(true)}
-    />
+    <div
+      className={cn(
+        "w-full h-48 flex items-center justify-center overflow-hidden",
+        src === "/naedo_white_logo.png" ? "bg-[#0B2E9E] p-10" : "bg-muted"
+      )}
+    >
+      <img
+        src={src}
+        alt={alt}
+        className={cn(
+          "max-h-full max-w-full",
+          src === "/naedo_white_logo.png" ? "object-contain" : "h-full w-full object-cover"
+        )}
+        onError={() => setImageError(true)}
+      />
+    </div>
   );
 }
 

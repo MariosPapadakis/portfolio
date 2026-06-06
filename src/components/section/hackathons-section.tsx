@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { DATA } from "@/data/resume";
 import { Timeline, TimelineItem, TimelineConnectItem } from "@/components/timeline";
+import { cn } from "@/lib/utils";
 
 export default function HackathonsSection() {
   return (
@@ -30,11 +31,18 @@ export default function HackathonsSection() {
             <TimelineItem key={hackathon.title + hackathon.dates} className="w-full flex items-start justify-between gap-10">
               <TimelineConnectItem className="flex items-start justify-center">
                 {hackathon.image ? (
-                  <img
-                    src={hackathon.image}
-                    alt={hackathon.title}
-                    className="size-10 bg-card z-10 shrink-0 overflow-hidden p-1 border rounded-full shadow ring-2 ring-border object-contain flex-none"
-                  />
+                  <div
+                    className={cn(
+                      "size-10 z-10 shrink-0 overflow-hidden p-1 border rounded-full shadow ring-2 ring-border flex-none flex items-center justify-center",
+                      hackathon.image === "/Logo.svg" ? "bg-[#E84DB5]" : "bg-card"
+                    )}
+                  >
+                    <img
+                      src={hackathon.image}
+                      alt={hackathon.title}
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  </div>
                 ) : (
                   <div className="size-10 bg-card z-10 shrink-0 overflow-hidden p-1 border rounded-full shadow ring-2 ring-border flex-none" />
                 )}

@@ -8,6 +8,9 @@ import { Python } from "@/components/ui/svgs/python";
 import { Postgresql } from "@/components/ui/svgs/postgresql";
 import { Java } from "@/components/ui/svgs/java";
 import { Csharp } from "@/components/ui/svgs/csharp";
+import { Firebase } from "@/components/ui/svgs/firebase";
+import { Javascript } from "@/components/ui/svgs/javascript";
+import { Expo } from "@/components/ui/svgs/expo";
 
 export const DATA = {
   name: "Marios Papadakis",
@@ -22,20 +25,19 @@ export const DATA = {
   avatarUrl: "/profile.jpg",
   skills: [
     { name: "TypeScript", icon: Typescript },
-    { name: "JavaScript", icon: Typescript },
+    { name: "JavaScript", icon: Javascript },
     { name: "React", icon: ReactLight },
     { name: "React Native", icon: ReactLight },
-    { name: "Expo", icon: ReactLight },
+    { name: "Expo", icon: Expo },
     { name: "Next.js", icon: NextjsIconDark },
     { name: "Node.js", icon: Nodejs },
-    { name: "Firebase", icon: Icons.globe },
+    { name: "Firebase", icon: Firebase },
     { name: "PostgreSQL", icon: Postgresql },
     { name: "SQL", icon: Postgresql },
     { name: "Python", icon: Python },
     { name: "Java", icon: Java },
     { name: "C", icon: Csharp },
     { name: "C++", icon: Csharp },
-    { name: "English", icon: Icons.globe },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -56,12 +58,6 @@ export const DATA = {
         url: "https://www.linkedin.com/in/mariospapadakis/",
         icon: Icons.linkedin,
         navbar: true,
-      },
-      X: {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/mariospapadakis/",
-        icon: Icons.linkedin,
-        navbar: false,
       },
       email: {
         name: "Send Email",
@@ -146,30 +142,6 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Lutify - GPU-Accelerated Mobile Photo Editor",
-      href: "https://github.com/MariosPapadakis",
-      dates: "Oct 2025 - Present",
-      active: true,
-      description:
-        "Developed Lutify, a GPU-accelerated mobile photo editor built with React Native, TypeScript, and Skia, enabling real-time color grading at 60 FPS even on mid-range devices. Designed and implemented a custom GLSL shader pipeline supporting 3D LUT parsing, trilinear interpolation, and cross-platform SQLite persistence for full-resolution image exports.",
-      technologies: [
-        "React Native",
-        "TypeScript",
-        "Skia",
-        "GLSL",
-        "SQLite",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://github.com/MariosPapadakis",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "",
-    },
-    {
       title: "Opora - Agricultural Logistics Management Platform",
       href: "https://www.getopora.com/",
       dates: "Jul 2025 - Present",
@@ -184,7 +156,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "/opora_logo.png",
       video: "",
     },
     {
@@ -204,17 +176,17 @@ export const DATA = {
       ],
       links: [
         {
-          type: "GitHub",
+          type: "Website",
           href: "https://naedo.gr/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "/naedo_white_logo.png",
       video: "",
     },
     {
       title: "Alpha Language Compiler & Virtual Machine",
-      href: "https://github.com/MariosPapadakis",
+      href: "https://github.com/MariosPapadakis/HY340-Alpha-Compiler-VM",
       dates: "Mar 2025 - Jun 2025",
       active: true,
       description:
@@ -223,7 +195,25 @@ export const DATA = {
       links: [
         {
           type: "GitHub",
-          href: "https://github.com/MariosPapadakis",
+          href: "https://github.com/MariosPapadakis/HY340-Alpha-Compiler-VM",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Movie Platform Project",
+      href: "https://github.com/MariosPapadakis/Movie-Platform-project",
+      dates: "HY240 Coursework",
+      active: true,
+      description:
+        "Built a C-based movie platform project for HY240, focusing on structured data handling, command-driven program flow, and systems programming fundamentals.",
+      technologies: ["C", "Makefile", "Data Structures", "Systems Programming"],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/MariosPapadakis/Movie-Platform-project",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -232,7 +222,7 @@ export const DATA = {
     },
     {
       title: "StudyPilot",
-      href: "https://github.com/MariosPapadakis",
+      href: "https://www.figma.com/deck/sIZoFaxg7nzu09V4R2pLC8/StudyPilot--Copy-?node-id=18-55&p=f&viewport=-4195%2C336%2C0.15&t=I0FfsYGlIOmHreLJ-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
       dates: "Oct 2025",
       active: true,
       description:
@@ -240,9 +230,9 @@ export const DATA = {
       technologies: ["Next.js", "TypeScript", "Firebase", "Google Genkit AI"],
       links: [
         {
-          type: "GitHub",
-          href: "https://github.com/MariosPapadakis",
-          icon: <Icons.github className="size-3" />,
+          type: "Deck",
+          href: "https://www.figma.com/deck/sIZoFaxg7nzu09V4R2pLC8/StudyPilot--Copy-?node-id=18-55&p=f&viewport=-4195%2C336%2C0.15&t=I0FfsYGlIOmHreLJ-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+          icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "",
@@ -256,7 +246,7 @@ export const DATA = {
       location: "Epignosis & University of Crete, Computer Science Department",
       description:
         "Won 1st place for developing StudyPilot, an AI-powered learning assistant that generates quizzes, flashcards, and summaries from study materials including PDFs, DOCX files, and YouTube videos.",
-      image: "",
+      image: "/Logo.svg",
       win: "1st Place",
       links: [
         {
@@ -272,9 +262,15 @@ export const DATA = {
       location: "OramaVR & University of Crete, Computer Science Department",
       description:
         "Built a multiplayer educational VR game in 72 hours using Unity and the MAGES SDK plugin. The team placed 1st.",
-      image: "",
+      image: "/oramavr_logo.jpeg",
       win: "1st Place",
-      links: [],
+      links: [
+        {
+          title: "Video",
+          icon: <Icons.youtube className="h-4 w-4" />,
+          href: "https://www.youtube.com/watch?v=CqETAvKYhqA",
+        },
+      ],
     },
   ],
 } as const;
