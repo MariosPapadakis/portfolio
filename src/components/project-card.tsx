@@ -15,11 +15,8 @@ function getProjectFallback(title: string, tags: readonly string[]) {
     return {
       label: "Compiler",
       mark: "α",
-      detail: "lexer -> parser -> vm",
+      detail: "lexer / parser / vm",
       accent: "#3B82F6",
-      background:
-        "radial-gradient(circle at 20% 20%, rgba(59,130,246,0.24), transparent 34%), linear-gradient(135deg, #111827 0%, #020617 100%)",
-      chips: tags.slice(0, 3),
     };
   }
 
@@ -27,11 +24,8 @@ function getProjectFallback(title: string, tags: readonly string[]) {
     return {
       label: "Coursework",
       mark: "HY240",
-      detail: "lists / trees / commands",
+      detail: "data structures / commands",
       accent: "#F59E0B",
-      background:
-        "radial-gradient(circle at 80% 20%, rgba(245,158,11,0.24), transparent 32%), linear-gradient(135deg, #18181B 0%, #09090B 100%)",
-      chips: tags.slice(0, 3),
     };
   }
 
@@ -39,11 +33,8 @@ function getProjectFallback(title: string, tags: readonly string[]) {
     return {
       label: "AI study tool",
       mark: "SP",
-      detail: "summaries / flashcards / quizzes",
+      detail: "summaries / quizzes",
       accent: "#E84DB5",
-      background:
-        "radial-gradient(circle at 30% 20%, rgba(232,77,181,0.3), transparent 34%), linear-gradient(135deg, #111827 0%, #27051C 100%)",
-      chips: tags.slice(0, 3),
     };
   }
 
@@ -58,9 +49,6 @@ function getProjectFallback(title: string, tags: readonly string[]) {
       .toUpperCase(),
     detail: tags.slice(0, 3).join(" / "),
     accent: "#737373",
-    background:
-      "radial-gradient(circle at 25% 20%, rgba(115,115,115,0.24), transparent 34%), linear-gradient(135deg, #171717 0%, #0A0A0A 100%)",
-    chips: tags.slice(0, 3),
   };
 }
 
@@ -75,44 +63,30 @@ function ProjectFallbackImage({
 
   return (
     <div
-      className="relative flex h-48 w-full overflow-hidden text-white"
-      style={{ background: fallback.background }}
+      className="relative flex h-48 w-full overflow-hidden bg-[#101010] text-white"
       aria-label={`${title} preview`}
     >
-      <div
-        className="absolute inset-x-0 top-0 h-px opacity-70"
-        style={{ backgroundColor: fallback.accent }}
-      />
-      <div className="absolute -right-12 -top-16 size-44 rounded-full border border-white/10 bg-white/5" />
-      <div className="absolute -bottom-20 left-8 size-52 rounded-full border border-white/10 bg-white/[0.03]" />
-      <div className="relative flex h-full w-full flex-col justify-between p-5">
-        <div className="flex items-center justify-between gap-3">
-          <span className="rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-white/80">
+      <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.075),transparent_38%)]" />
+      <div className="absolute inset-x-0 bottom-0 h-px bg-white/10" />
+      <div className="relative flex h-full w-full flex-col justify-between p-6">
+        <div className="flex items-start justify-between gap-4">
+          <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/50">
             {fallback.label}
           </span>
           <span
-            className="h-2 w-2 rounded-full"
+            className="mt-1 h-1.5 w-1.5 rounded-full"
             style={{ backgroundColor: fallback.accent }}
           />
         </div>
-        <div className="flex items-end justify-between gap-4">
-          <div className="min-w-0">
-            <div className="font-mono text-5xl font-semibold leading-none tracking-normal">
-              {fallback.mark}
-            </div>
-            <div className="mt-3 font-mono text-xs text-white/60">
-              {fallback.detail}
-            </div>
+        <div className="flex items-end justify-between gap-5">
+          <div
+            className="text-6xl font-semibold leading-none tracking-normal text-white"
+            style={{ color: fallback.accent }}
+          >
+            {fallback.mark}
           </div>
-          <div className="hidden max-w-32 flex-col gap-1.5 sm:flex">
-            {fallback.chips.map((chip) => (
-              <div
-                key={chip}
-                className="truncate rounded-md border border-white/10 bg-black/20 px-2 py-1 text-right text-[10px] font-medium text-white/70"
-              >
-                {chip}
-              </div>
-            ))}
+          <div className="max-w-36 text-right font-mono text-[11px] leading-relaxed text-white/45">
+            {fallback.detail}
           </div>
         </div>
       </div>

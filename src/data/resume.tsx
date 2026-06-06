@@ -62,6 +62,12 @@ export const DATA = {
         icon: Icons.linkedin,
         navbar: true,
       },
+      Instagram: {
+        name: "Instagram",
+        url: "https://www.instagram.com/marios_papadakis_/",
+        icon: Icons.instagram,
+        navbar: true,
+      },
       email: {
         name: "Send Email",
         url: "mailto:marios.papadakis.gr@gmail.com",
